@@ -1,7 +1,6 @@
 @import
 url('https://fonts.googleapis.com/css2?family=Miniver&family=Ribeye&family=Righteous&display=swap');
 body{
-    height: 100vh;
      background: linear-gradient(to top, #615356, #ccc);
      background-size: cover;
      background-repeat: no-repeat;
@@ -65,11 +64,13 @@ content: "";
 }
 
 .galeria {
+    height: 100%;
     display: grid; /*el contenedor se acomoda en una cuadricula*/
     grid-template-columns: repeat(3, 1fr); /*la cuadricula se divide en tres partes iguales 1fr →  “una fracción del espacio disponible”.*/
     gap: 10px;
     margin: 20px auto;
-    max-width: 1200px; 
+
+
 }
 
 .galeria img {
@@ -137,13 +138,17 @@ content: "";
 
 /* Responsive para celulares */
 @media (max-width: 768px) {
-  
 
+    body{
+
+    }
     .galeria {
         display: flex;
         flex-direction: column;  /* texto e imagen en columna */
         padding: 20px;
+    }
 
+    .galeria img {
     }
 
    

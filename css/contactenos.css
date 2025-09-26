@@ -4,6 +4,9 @@ url('https://fonts.googleapis.com/css2?family=Miniver&family=Ribeye&family=Right
 body{
     background-color: #f4f4f5;
     font-family: "Montserrat", sans-serif;
+      background: linear-gradient(to top, #a58f94, #ccc);
+     background-size: cover;
+     background-repeat: no-repeat;
 }
 .container-header {
     display: flex; 
@@ -202,5 +205,13 @@ h1::after{
   .formulario{
     justify-self: center;
     width: 80%;
+  }
+  .lista{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .lista ul li i{
+    margin: 10px 5px;
   }
 }
